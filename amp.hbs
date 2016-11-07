@@ -1,5 +1,4 @@
 <!-- Material Amp Theme -->
-
 <!DOCTYPE html>
 <html ⚡>
 <head>
@@ -15,7 +14,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
     {{!-- Brand icon --}}
-    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+    <link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
 
     {{amp_ghost_head}}
 
@@ -812,11 +811,12 @@
                     <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time>
                 </section>
             </header>
-            {{#if image}}
+
+            <!-- {{#if image}}
             <figure class="post-image">
                 <amp-img src="{{image absolute="true"}}" width="600" height="400" layout="responsive"></amp-img>
             </figure>
-            {{/if}}
+            {{/if}} -->
             <section class="post-content">
 
                 {{amp_content}}
