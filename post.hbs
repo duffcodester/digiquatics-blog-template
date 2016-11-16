@@ -77,8 +77,26 @@
             <section class="gh-subscribe">
                 <h3 class="gh-subscribe-title">Subscribe to {{@blog.title}}</h3>
                 <p>Get the latest posts delivered right to your inbox.</p>
-                {{subscribe_form placeholder="Your email address"}}
-                <span class="gh-subscribe-rss">or subscribe <a href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/">via RSS</a> with Feedly!</span>
+                <!-- {{subscribe_form placeholder="Your email address"}} -->
+                <!-- Begin MailChimp Signup Form -->
+                <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                  #mc_embed_signup{background:#FAFAFA; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+                  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                </style>
+                <div id="mc_embed_signup">
+                <form action="//digiquatics.us10.list-manage.com/subscribe/post?u=bc9a16451ddb212394b2de9fd&amp;id=137f65212e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+
+                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bc9a16451ddb212394b2de9fd_137f65212e" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+                </div>
+                <!--End mc_embed_signup-->
             </section>
             {{/if}}
 
@@ -103,7 +121,7 @@
           })();
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        
+
     </article>
 
 
